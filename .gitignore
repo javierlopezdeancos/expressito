@@ -1,0 +1,124 @@
+##############################
+#         TEST               #
+##############################
+test/
+
+##############################
+#         NODE MODULES       #
+##############################
+node_modules/
+
+##############################
+#         FILES              #
+##############################
+dist
+.DS_Store
+.tmp
+.sass-cache
+
+##############################
+#         COMPONENTS         #
+##############################
+
+#####################
+#    jQuery         #
+#####################
+app/components/jquery/.gitignore
+app/components/jquery/jquery-migrate.js
+app/components/jquery/jquery-migrate.min.js
+app/components/jquery/*.json
+app/components/jquery/*.md
+
+#####################
+#   Modernizr       #
+#####################
+app/components/modernizr/.editorconfig
+app/components/modernizr/grunt.js
+app/components/modernizr/test/
+app/components/modernizr/feature-detects/
+app/components/modernizr/media/
+app/components/modernizr/.gitignore
+app/components/modernizr/*.json
+app/components/modernizr/*.json
+app/components/modernizr/*.md
+app/components/modernizr/*.yml
+
+#####################
+#   Requirejs       #
+#####################
+app/components/requirejs/tests/
+app/components/requirejs/dist/
+app/components/requirejs/docs/
+app/components/requirejs/test/
+app/components/requirejs/.gitignore
+app/components/requirejs/*.json
+app/components/requirejs/*.html
+app/components/requirejs/*.md
+app/components/requirejs/*.txt
+app/components/requirejs/*.sh
+app/components/requirejs/LICENSE
+app/components/requirejs/testBaseUrl.js
+
+#####################
+#  Requirejs-text   #
+#####################
+app/components/requirejs-text/LICENSE
+app/components/requirejs-text/*.json
+app/components/requirejs-text/*.md
+
+#####################
+#  Underscore       #
+#####################
+app/components/underscore/docs/
+app/components/underscore/test/
+app/components/underscore/.gitignore
+app/components/underscore/.npmignore
+app/components/underscore/.travis.yml
+app/components/underscore/CNAME
+app/components/underscore/*.json
+app/components/underscore/*.md
+app/components/underscore/*.ico
+app/components/underscore/*.html
+app/components/underscore/LICENSE
+app/components/underscore/Rakefile
+app/components/underscore/index.js
+
+#####################
+#  Backbone         #
+#####################
+app/components/backbone/docs/
+app/components/backbone/test/
+app/components/backbone/examples/
+app/components/backbone/.gitignore
+app/components/backbone/.npmignore
+app/components/backbone/.travis.yml
+app/components/backbone/CNAME
+app/components/backbone/*.map
+app/components/backbone/*.json
+app/components/backbone/*.md
+app/components/backbone/*.ico
+app/components/backbone/*.html
+app/components/backbone/LICENSE
+app/components/backbone/Rakefile
+app/components/backbone/index.js
+
+#####################
+#  Marionette       #
+#####################
+app/components/marionette/docs/
+app/components/marionette/lib/backbone.marionette.map
+app/components/marionette/lib/core/
+app/components/marionette/public/
+app/components/marionette/reports/
+app/components/marionette/spec/
+app/components/marionette/src/
+app/components/marionette/.gitignore
+app/components/marionette/.jshintrc
+app/components/marionette/.travis.yml
+app/components/marionette/build
+app/components/marionette/build.cmd
+app/components/marionette/*.md
+app/components/marionette/*.json
+app/components/marionette/*.txt
+app/components/marionette/Gruntfile.js
+app/components/marionette/.DS_Store
