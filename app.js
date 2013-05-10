@@ -9,9 +9,20 @@ var app = module.exports = express.createServer();
 
 // Configuration
 app.configure(function(){
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.set('view options', { pretty: true });
+  // Dir views
+  app.set('views', __dirname + '/app');
+  // Render simple HTML
+    // disable layout
+  app.set("view options", {layout: false});
+    // make a custom html template
+  app.register('.html', {
+    compile: function(str, options){
+      return function(locals){
+        return str;
+      };
+    }
+  });
+  // Server config
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
