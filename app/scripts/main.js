@@ -5,9 +5,9 @@ require.config({
   paths: {
     /**** components *****/
     jquery:       '../components/jquery/jquery',
-    underscore:   '../components//underscore/underscore',
-    backbone:     '../components//backbone/backbone',
-    text:         '../components//requirejs-text/text',
+    underscore:   '../components/underscore/underscore',
+    backbone:     '../components/backbone/backbone',
+    text:         '../components/requirejs-text/text',
     /**** app *****/
     app:          '/scripts/app',
     routers:      '/scripts/routers',
