@@ -11,14 +11,11 @@ function($, _, Backbone, app, Model){
 	'use strict';
 
   var Collection = Backbone.Collection.extend({
-
     model: Model,
     url: 'scripts/models/data_home.json',
-
     parse : function(response){
       return response;
     }
-
   });
 
   return Collection;

@@ -1,28 +1,53 @@
 define([
   // vendors
   'jquery',
-  'underscore',
-  'backbone',
-  // views & models & templates
-  'views/view_home'],
-function($, _, Backbone, View){
+    'underscore',
+    'backbone',
+    'marionette',
+  // app
+  'app',
+  // controlers
+  'controlers/controler_home'
+], function($, _, Backbone, Marionette, app, Controller) {
   'use strict';
 
   var Router = Backbone.Router.extend({
 
-    initialize: function(){
-      Backbone.history.start();
+    /**
+     * Initialize actions before route
+     *
+     * @method initialize
+     */
+    initialize: function() {
+      // ...here initialize functions...
     },
 
-    // routes
+    /**
+     * Object with url paths and handels functions
+     * to run with every url route
+     *
+     * @Object routes
+     */
     routes: {
       '': 'home'
     },
 
-    // handlers
-    'home': function(){
-      this.view_home = new View();
-      this.view_home.render();
+    /**
+     * Handle method to home path
+     * initialize, actions, run home app.module
+     * execute showView home app.module method
+     *
+     * @method home
+     */
+    'home': function() {
+      // define home marionette module
+      app.module("home", function(Mod, app, Backbone, Marionette, $, _) {
+        // launch home controler
+        Mod.controller = new Controller({
+          region: app.mainRegion
+        });
+        Mod.controller.showView();
+      });
     }
 
   });

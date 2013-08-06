@@ -6,6 +6,7 @@ define([
  	// routers
  	'routers/router_home'],
 function($, _, Backbone, router){
+	'use strict';
 
 	var initialize = function(){
 		// the app start

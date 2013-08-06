@@ -1,0 +1,15 @@
+{
+  "name": "stimulapp",
+  "description": "stimulapp, app mobile regeneration cognitive",
+  "version": "0.0.1",
+  "url": "http://www.stimulapp.es/",
+  "options": {
+    /*"external": {
+      //"data": "http://yuilibrary.com/yui/docs/api/data.json"
+    },*/
+    "paths": "*/js",
+    "linkNatives": "true",
+    "attributesEmit": "true"
+  },
+  "outdir": "doc"
+}

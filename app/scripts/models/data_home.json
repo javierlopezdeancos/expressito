@@ -1,6 +1,6 @@
 [
-	{"message": "this is model 1 item"},
-	{"message": "this is model 2 item"},
-	{"message": "this is model 3 item"},
-	{"message": "this is model 4 item"}
+	{"message": "this is message model 1"},
+	{"message": "this is message model 2"},
+	{"message": "this is message model 3"},
+	{"message": "this is message model 4"}
 ]
